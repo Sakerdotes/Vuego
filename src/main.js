@@ -1,13 +1,14 @@
 import Vue from 'vue'
-import VueResource from 'vue-resource'
+import BootstrapVue from 'bootstrap-vue'
+
+// import 'bootstrap/dist/css/bootstrap.css';
+// import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 import app from './App.vue'
 import router from './router/router.js'
 import store from './store/store.js'
 
-Vue.use(VueResource);
-
-
+Vue.use(BootstrapVue);
 Vue.component('app', app);
 
 new Vue({

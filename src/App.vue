@@ -10,6 +10,12 @@
     </div>
 </template>
 
+<style>
+    body {
+        font-size: 18px;
+    }
+</style>
+
 <script>
     import NavBar from './components/NavBar.vue'
     import BotBar from './components/BotBar.vue'
