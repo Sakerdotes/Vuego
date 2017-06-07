@@ -15,6 +15,10 @@ module.exports = {
                 loader: 'vue-loader'
             },
             {
+                test: /\.scss$/,
+                loaders: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
                 test: /\.js$/,
                 loader: 'babel-loader',
                 exclude: /node_modules/
@@ -32,31 +36,5 @@ module.exports = {
         alias: {
             'vue$': 'vue/dist/vue.common.js'
         }
-    },
-    // plugins: [
-    //     new webpack.LoaderOptionsPlugin({
-    //         minimize: true
-    //     })
-    // ],
-    // devtool: '#eval-source-map'
+    }
 };
-//
-// if (process.env.NODE_ENV === 'production') {
-//     module.exports.devtool = '#source-map';
-//     module.exports.plugins = (module.exports.plugins || []).concat([
-//         new webpack.DefinePlugin({
-//             'process.env': {
-//                 NODE_ENV: '"production"'
-//             }
-//         }),
-//         // new webpack.optimize.UglifyJsPlugin({
-//         //     sourceMap: true,
-//         //     compress: {
-//         //         warnings: false
-//         //     }
-//         // }),
-//         new webpack.LoaderOptionsPlugin({
-//             minimize: true
-//         })
-//     ])
-// }

@@ -1,8 +1,7 @@
 import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 
-// import 'bootstrap/dist/css/bootstrap.css';
-// import 'bootstrap-vue/dist/bootstrap-vue.css';
+import "bootstrap/scss/bootstrap.scss"
 
 import app from './App.vue'
 import router from './router/router.js'
@@ -12,6 +11,6 @@ Vue.use(BootstrapVue);
 Vue.component('app', app);
 
 new Vue({
-    router,store
+    router, store
 }).$mount('#app');
 
